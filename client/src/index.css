@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 221 39% 11%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 221 39% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 221 39% 11%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --primary: 25 95% 62%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 221 39% 11%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 221 39% 11%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 25 95% 62%;
+  --radius: 0.5rem;
+  
+  /* Brand Colors */
+  --brand-orange: 25 95% 62%;
+  --brand-blue: 214 88% 58%;
+  --brand-navy: 221 39% 11%;
+  --light-gray: 210 17% 98%;
+}
+
+.dark {
+  --background: 221 39% 11%;
+  --foreground: 210 40% 98%;
+  --muted: 215 28% 17%;
+  --muted-foreground: 215 20% 65%;
+  --popover: 221 39% 11%;
+  --popover-foreground: 210 40% 98%;
+  --card: 221 39% 11%;
+  --card-foreground: 210 40% 98%;
+  --border: 215 28% 17%;
+  --input: 215 28% 17%;
+  --primary: 25 95% 62%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 215 28% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 215 28% 17%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 25 95% 62%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-brand-orange {
+    color: hsl(var(--brand-orange));
+  }
+  
+  .text-brand-blue {
+    color: hsl(var(--brand-blue));
+  }
+  
+  .text-brand-navy {
+    color: hsl(var(--brand-navy));
+  }
+  
+  .bg-brand-orange {
+    background-color: hsl(var(--brand-orange));
+  }
+  
+  .bg-brand-blue {
+    background-color: hsl(var(--brand-blue));
+  }
+  
+  .bg-brand-navy {
+    background-color: hsl(var(--brand-navy));
+  }
+  
+  .bg-light-gray {
+    background-color: hsl(var(--light-gray));
+  }
+  
+  .border-brand-orange {
+    border-color: hsl(var(--brand-orange));
+  }
+  
+  .border-brand-blue {
+    border-color: hsl(var(--brand-blue));
+  }
+  
+  .hover\:bg-brand-orange:hover {
+    background-color: hsl(var(--brand-orange));
+  }
+  
+  .hover\:text-brand-orange:hover {
+    color: hsl(var(--brand-orange));
+  }
+  
+  .focus\:ring-brand-orange:focus {
+    --tw-ring-color: hsl(var(--brand-orange));
+  }
+}
