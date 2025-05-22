@@ -7,21 +7,21 @@ export default function About() {
       icon: Rocket,
       title: "Results-Driven Approach",
       description: "Every strategy we implement is designed to deliver measurable results and drive real business growth.",
-      color: "text-brand-orange",
+     
       bgColor: "bg-brand-orange"
     },
     {
       icon: Users,
       title: "Expert Team",
       description: "Our team of certified professionals stays ahead of industry trends to keep your business competitive.",
-      color: "text-brand-blue",
+  
       bgColor: "bg-brand-blue"
     },
     {
       icon: TrendingUp,
       title: "Data-Driven Insights",
       description: "We use advanced analytics and reporting to optimize campaigns and maximize your return on investment.",
-      color: "text-purple-500",
+
       bgColor: "bg-purple-500"
     }
   ];
@@ -55,7 +55,7 @@ export default function About() {
                   viewport={{ once: true }}
                 >
                   <div className={`${feature.bgColor} bg-opacity-10 p-3 rounded-lg`}>
-                    <feature.icon className={`${feature.color} h-6 w-6`} />
+                    <feature.icon className={`${feature.bgColor} h-6 w-6`} />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-brand-navy mb-2">

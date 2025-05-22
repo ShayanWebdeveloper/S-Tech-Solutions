@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { Code, Megaphone, Share2, Facebook, Search, Youtube, Check, Monitor, TrendingUp } from "lucide-react";
+import { Code, Megaphone, Share2, Facebook, Search, Youtube, Check, Monitor, TrendingUp, Earth } from "lucide-react";
 
 const services = [
   {
-    icon: Code,
+    icon: Earth,
     title: "Web Development",
     description: "Custom websites and web applications built with modern technologies. Responsive, fast, and optimized for conversions.",
     color: "text-brand-orange",
-    bgColor: "bg-brand-orange",
+    bgColor: "White",
     features: ["Responsive Design", "Modern Frameworks", "Performance Optimization"]
   },
   {
@@ -15,7 +15,7 @@ const services = [
     title: "Digital Marketing",
     description: "Comprehensive digital marketing strategies that increase brand awareness and drive qualified traffic to your business.",
     color: "text-brand-blue",
-    bgColor: "bg-brand-blue",
+    bgColor: "bg-green-500",
     features: ["Strategy Development", "Content Marketing", "Brand Management"]
   },
   {

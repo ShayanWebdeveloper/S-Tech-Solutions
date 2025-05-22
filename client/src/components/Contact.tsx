@@ -63,28 +63,27 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Call Us",
-      content: "+1 (555) 123-4567",
+      content: "03202211054",
       color: "bg-brand-orange"
     },
     {
       icon: Mail,
       title: "Email Us",
-      content: "hello@stechsolution.com",
+      content: "zubairshayan70@gmail.com",
       color: "bg-brand-blue"
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      content: "123 Business Ave, City, State 12345",
+      content: "Karachi Sindh Pakistan",
       color: "bg-purple-500"
     }
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", color: "hover:text-blue-600" },
-    { icon: Twitter, href: "#", color: "hover:text-blue-400" },
-    { icon: Linkedin, href: "#", color: "hover:text-blue-700" },
-    { icon: Instagram, href: "#", color: "hover:text-pink-600" }
+    { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61573859978746", color: "hover:text-blue-600" },
+    
+    { icon: Linkedin, href: "https://www.linkedin.com/company/s-tech-solution12/  ", color: "hover:text-blue-700" },
   ];
 
   return (

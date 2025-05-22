@@ -1,5 +1,5 @@
 import logoPath from "@assets/480176787_122103918212795332_6131134995016059852_n.jpg";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Twitter, Linkedin, PhoneCall } from "lucide-react";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -28,10 +28,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#" },
-    { icon: Twitter, href: "#" },
-    { icon: Linkedin, href: "#" },
-    { icon: Instagram, href: "#" }
+    { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61573859978746" },
+   
+    { icon: Linkedin, href: "https://www.linkedin.com/company/s-tech-solution12/" },
+ 
   ];
 
   return (
