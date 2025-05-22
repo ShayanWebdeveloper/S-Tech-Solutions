@@ -60,7 +60,7 @@ export default function Navigation() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16">
           {/* Enhanced Logo */}
           <motion.div 
             className="flex items-center group cursor-pointer"
@@ -68,35 +68,20 @@ export default function Navigation() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <motion.div
-              className="relative"
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-brand-orange to-brand-blue rounded-xl blur-sm opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+            <div className="relative">
               <img 
                 src={logoPath} 
                 alt="S Tech Solution" 
-                className="relative h-12 w-12 rounded-xl shadow-lg object-cover"
+                className="h-10 w-10 rounded-lg shadow-md object-cover"
               />
-            </motion.div>
-            <div className="ml-4">
-              <motion.h1 
-                className="text-2xl font-bold bg-gradient-to-r from-brand-navy via-brand-blue to-brand-orange bg-clip-text text-transparent"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 }}
-              >
+            </div>
+            <div className="ml-3">
+              <h1 className="text-xl font-bold text-brand-navy">
                 S Tech Solution
-              </motion.h1>
-              <motion.p 
-                className="text-xs text-gray-500 font-medium"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
-              >
+              </h1>
+              <p className="text-xs text-gray-600 font-medium">
                 Digital Marketing Excellence
-              </motion.p>
+              </p>
             </div>
           </motion.div>
 

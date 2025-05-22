@@ -19,7 +19,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Digital Marketing
+              <span className="text-gray-100">Digital Marketing</span>
               <span className="text-brand-orange"> Excellence</span>
             </h1>
             <p className="text-xl mb-8 text-gray-300 leading-relaxed">
