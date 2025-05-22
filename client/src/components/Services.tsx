@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Megaphone, Share2, Facebook, Search, Youtube, Check } from "lucide-react";
+import { Code, Megaphone, Share2, Facebook, Search, Youtube, Check, Monitor, TrendingUp } from "lucide-react";
 
 const services = [
   {
@@ -79,8 +79,8 @@ export default function Services() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className={`${service.bgColor} bg-opacity-10 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-opacity-20 transition-colors duration-300`}>
-                <service.icon className={`${service.color} h-8 w-8`} />
+              <div className={`${service.bgColor} bg-opacity-15 w-20 h-20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-opacity-25 group-hover:scale-110 transition-all duration-300 shadow-lg`}>
+                <service.icon className={`${service.color} h-10 w-10 group-hover:scale-110 transition-transform duration-300`} />
               </div>
               
               <h3 className="text-2xl font-bold text-brand-navy mb-4">{service.title}</h3>
