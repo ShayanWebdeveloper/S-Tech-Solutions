@@ -22,7 +22,7 @@ export default function Hero() {
               <span className="text-white">Digital Marketing</span>
               <span className="text-brand-orange"> Excellence</span>
             </h1>
-            <p className="text-xl mb-8 text-gray-300 leading-relaxed">
+            <p className="text-xl mb-8 text-white leading-relaxed">
               Transform your digital presence with our comprehensive suite of marketing services. 
               From web development to targeted advertising campaigns, we deliver results that matter.
             </p>
